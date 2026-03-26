@@ -52,36 +52,22 @@ setopt HIST_SAVE_NO_DUPS
 setopt EXTENDED_HISTORY
 setopt INC_APPEND_HISTORY_TIME
 
-<<<<<<< HEAD
-export PATH="$HOME/.local/bin:$PATH"
-eval "$(starship init zsh)"
-=======
 ## Online install
 
 Run the script directly without downloading it first:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dvpig/zclean-starship/main/reset-zsh-and-install-starship.sh | bash
->>>>>>> c45acf8 (Update README and script)
 ```
 
 This gives you:
 
-<<<<<<< HEAD
-- Zsh's modern completion system via `compinit`
-- persistent history with sane defaults
-- Starship enabled with the **default** prompt style
-=======
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dvpig/zclean-starship/main/reset-zsh-and-install-starship.sh | bash -s -- -y
 ```
->>>>>>> c45acf8 (Update README and script)
 
 ## Usage
 
-<<<<<<< HEAD
-Make the script executable:
-=======
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dvpig/zclean-starship/main/reset-zsh-and-install-starship.sh | bash -s -- --purge-history
 ```
@@ -103,7 +89,6 @@ curl -fsSL https://raw.githubusercontent.com/dvpig/zclean-starship/main/reset-zs
 ## Local usage
 
 If you prefer to inspect the script first:
->>>>>>> c45acf8 (Update README and script)
 
 ```bash
 chmod +x reset-zsh-and-install-starship.sh
@@ -177,11 +162,6 @@ Some Zsh setups become hard to reason about after trying multiple frameworks, th
 
 ## Disclaimer
 
-<<<<<<< HEAD
-This script removes user-level Zsh configuration files. Read it before running it, and make sure you understand what will be changed.
-curl -fsSL https://raw.githubusercontent.com/dvpig/zclean-starship/main/reset-zsh-and-install-starship.sh | bash
-curl -fsSL https://raw.githubusercontent.com/dvpig/zclean-starship/main/reset-zsh-and-install-starship.sh | bash -s -- --purge-history --no-backup -y
-=======
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dvpig/zclean-starship/main/reset-zsh-and-install-starship.sh | bash
 ```
@@ -265,4 +245,3 @@ starship preset gruvbox-rainbow -o ~/.config/starship.toml
 
 该脚本会删除当前用户已有的 Zsh 配置文件和框架。  
 如果你使用 `curl | bash` 远程执行，请先自行检查脚本内容。
->>>>>>> c45acf8 (Update README and script)
